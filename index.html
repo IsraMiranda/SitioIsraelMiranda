@@ -17,8 +17,9 @@
     --line: #d2d2d7;
     --line-soft: #f5f5f7;
     --surface: #fbfbfd;
-    --accent: #0071e3;
-    --accent-hover: #0077ed;
+    /* Cambiado de Azul a Rojo Vino */
+    --accent: #800020; 
+    --accent-hover: #990026;
     --max: 1100px;
     --gutter: clamp(20px, 5vw, 48px);
   }
@@ -384,8 +385,8 @@
   }
   .portfolio-item:hover {
     transform: translateY(-6px);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 30px 60px -25px rgba(0,113,227,0.18), 0 20px 40px -20px rgba(0,0,0,0.12);
-    border-color: rgba(0,113,227,0.2);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 30px 60px -25px rgba(128,0,32,0.18), 0 20px 40px -20px rgba(0,0,0,0.12);
+    border-color: rgba(128,0,32,0.2);
     z-index: 2;
   }
   .portfolio-thumb {
@@ -412,7 +413,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, transparent 60%, rgba(0,113,227,0.04));
+    background: linear-gradient(135deg, transparent 60%, rgba(128,0,32,0.04));
     opacity: 0;
     transition: opacity .45s;
     pointer-events: none;
@@ -498,8 +499,8 @@
   }
   .package:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 30px 60px -25px rgba(0,113,227,0.22), 0 20px 40px -20px rgba(0,0,0,0.12);
-    border-color: rgba(0,113,227,0.3);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 30px 60px -25px rgba(128,0,32,0.22), 0 20px 40px -20px rgba(0,0,0,0.12);
+    border-color: rgba(128,0,32,0.3);
     z-index: 2;
   }
   .package-tag {
@@ -779,7 +780,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero" id="top">
   <div>
     <div class="eyebrow">Consultoría empresarial</div>
@@ -802,7 +802,6 @@
   </div>
 </header>
 
-<!-- SERVICES -->
 <section id="servicios">
   <div class="section-label reveal">01 — Servicios</div>
   <h2 class="display section-title reveal">
@@ -810,7 +809,6 @@
   </h2>
   <div class="services-grid">
 
-    <!-- 01 Desarrollo comercial -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -821,12 +819,11 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Funnel pipeline -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#0071e3" stop-opacity="0.95"/>
-                  <stop offset="1" stop-color="#0071e3" stop-opacity="0.55"/>
+                  <stop offset="0" stop-color="#800020" stop-opacity="0.95"/>
+                  <stop offset="1" stop-color="#800020" stop-opacity="0.55"/>
                 </linearGradient>
               </defs>
               <g font-family="Inter, sans-serif" font-size="9" fill="#6e6e73">
@@ -848,7 +845,6 @@
       </div>
     </div>
 
-    <!-- 02 Estrategia empresarial -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -859,16 +855,14 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Bullseye + flecha -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g transform="translate(120 90)">
                 <circle r="72" fill="none" stroke="#d2d2d7" stroke-width="1"/>
                 <circle r="54" fill="none" stroke="#d2d2d7" stroke-width="1"/>
-                <circle r="36" fill="none" stroke="#0071e3" stroke-width="1.5" opacity="0.5"/>
-                <circle r="18" fill="#0071e3" opacity="0.15"/>
+                <circle r="36" fill="none" stroke="#800020" stroke-width="1.5" opacity="0.5"/>
+                <circle r="18" fill="#800020" opacity="0.15"/>
                 <circle r="6" fill="#1d1d1f"/>
               </g>
-              <!-- Flecha diagonal -->
               <g stroke="#1d1d1f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="35" y1="155" x2="118" y2="92"/>
                 <polyline points="108,88 120,90 118,102"/>
@@ -886,7 +880,6 @@
       </div>
     </div>
 
-    <!-- 03 Análisis de datos -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -897,7 +890,6 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Scatter con tendencia -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g stroke="#d2d2d7" stroke-width="0.8">
                 <line x1="30" y1="150" x2="220" y2="150"/>
@@ -906,10 +898,8 @@
                 <line x1="30" y1="90"  x2="220" y2="90"  opacity="0.4"/>
                 <line x1="30" y1="60"  x2="220" y2="60"  opacity="0.4"/>
               </g>
-              <!-- línea de tendencia -->
               <line x1="35" y1="135" x2="215" y2="35" stroke="#1d1d1f" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <!-- puntos -->
-              <g fill="#0071e3">
+              <g fill="#800020">
                 <circle cx="48"  cy="128" r="3.5"/>
                 <circle cx="68"  cy="118" r="3.5"/>
                 <circle cx="85"  cy="112" r="3.5"/>
@@ -927,7 +917,6 @@
       </div>
     </div>
 
-    <!-- 04 Decisiones basadas en datos -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -938,22 +927,18 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- KPI dashboard mini -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g font-family="Inter, sans-serif">
-                <!-- KPI 1 -->
                 <rect x="15"  y="20" width="100" height="55" rx="6" fill="#fff" stroke="#d2d2d7"/>
                 <text x="25" y="38" font-size="8" fill="#6e6e73">VENTAS</text>
                 <text x="25" y="60" font-family="Fraunces, serif" font-size="20" font-weight="500" fill="#1d1d1f">$2.4M</text>
-                <text x="92" y="60" font-size="9" fill="#0071e3" text-anchor="end">▲ 18%</text>
-                <!-- KPI 2 -->
+                <text x="92" y="60" font-size="9" fill="#800020" text-anchor="end">▲ 18%</text>
                 <rect x="125" y="20" width="100" height="55" rx="6" fill="#fff" stroke="#d2d2d7"/>
                 <text x="135" y="38" font-size="8" fill="#6e6e73">MARGEN</text>
                 <text x="135" y="60" font-family="Fraunces, serif" font-size="20" font-weight="500" fill="#1d1d1f">32%</text>
-                <text x="202" y="60" font-size="9" fill="#0071e3" text-anchor="end">▲ 4pp</text>
-                <!-- Bar chart -->
+                <text x="202" y="60" font-size="9" fill="#800020" text-anchor="end">▲ 4pp</text>
                 <rect x="15" y="85" width="210" height="80" rx="6" fill="#fff" stroke="#d2d2d7"/>
-                <g fill="#0071e3">
+                <g fill="#800020">
                   <rect x="30"  y="130" width="14" height="25" rx="2"/>
                   <rect x="55"  y="120" width="14" height="35" rx="2"/>
                   <rect x="80"  y="110" width="14" height="45" rx="2"/>
@@ -970,7 +955,6 @@
       </div>
     </div>
 
-    <!-- 05 IA aplicada -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -981,10 +965,8 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Red neuronal estilizada -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g stroke="#d2d2d7" stroke-width="0.8" fill="none">
-                <!-- conexiones capa 1 -> 2 -->
                 <line x1="40" y1="40"  x2="120" y2="40"/>
                 <line x1="40" y1="40"  x2="120" y2="90"/>
                 <line x1="40" y1="40"  x2="120" y2="140"/>
@@ -994,7 +976,6 @@
                 <line x1="40" y1="140" x2="120" y2="40"/>
                 <line x1="40" y1="140" x2="120" y2="90"/>
                 <line x1="40" y1="140" x2="120" y2="140"/>
-                <!-- conexiones capa 2 -> 3 -->
                 <line x1="120" y1="40"  x2="200" y2="65"/>
                 <line x1="120" y1="40"  x2="200" y2="115"/>
                 <line x1="120" y1="90"  x2="200" y2="65"/>
@@ -1006,9 +987,9 @@
                 <circle cx="40"  cy="40"  r="7" fill="#fff" stroke="#1d1d1f" stroke-width="1.5"/>
                 <circle cx="40"  cy="90"  r="7" fill="#fff" stroke="#1d1d1f" stroke-width="1.5"/>
                 <circle cx="40"  cy="140" r="7" fill="#fff" stroke="#1d1d1f" stroke-width="1.5"/>
-                <circle cx="120" cy="40"  r="8" fill="#0071e3"/>
-                <circle cx="120" cy="90"  r="8" fill="#0071e3"/>
-                <circle cx="120" cy="140" r="8" fill="#0071e3"/>
+                <circle cx="120" cy="40"  r="8" fill="#800020"/>
+                <circle cx="120" cy="90"  r="8" fill="#800020"/>
+                <circle cx="120" cy="140" r="8" fill="#800020"/>
                 <circle cx="200" cy="65"  r="9" fill="#1d1d1f"/>
                 <circle cx="200" cy="115" r="9" fill="#1d1d1f"/>
               </g>
@@ -1024,7 +1005,6 @@
       </div>
     </div>
 
-    <!-- 06 Capacitación comercial -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -1035,24 +1015,20 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Curva de crecimiento equipo antes/después -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g stroke="#d2d2d7" stroke-width="0.8">
                 <line x1="30" y1="150" x2="220" y2="150"/>
                 <line x1="30" y1="20"  x2="30"  y2="150"/>
               </g>
-              <!-- Línea base (antes) -->
               <path d="M 35 125 L 75 122 L 115 120 L 155 118 L 195 115 L 215 114"
                     fill="none" stroke="#6e6e73" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <!-- Línea después capacitación -->
               <path d="M 35 125 L 75 115 L 115 95 L 155 70 L 195 45 L 215 32"
-                    fill="none" stroke="#0071e3" stroke-width="2.2"/>
-              <!-- Marcador "capacitación" -->
+                    fill="none" stroke="#800020" stroke-width="2.2"/>
               <line x1="75" y1="20" x2="75" y2="150" stroke="#1d1d1f" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.5"/>
               <circle cx="75" cy="115" r="4" fill="#1d1d1f"/>
               <g font-family="Inter, sans-serif" font-size="8" fill="#6e6e73">
                 <text x="78" y="30">Capacitación</text>
-                <text x="218" y="38" text-anchor="end" fill="#0071e3" font-weight="500">+62%</text>
+                <text x="218" y="38" text-anchor="end" fill="#800020" font-weight="500">+62%</text>
                 <text x="218" y="125" text-anchor="end">Base</text>
               </g>
             </svg>
@@ -1062,7 +1038,6 @@
       </div>
     </div>
 
-    <!-- 07 Sistemas de gestión -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -1073,12 +1048,9 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Diagrama de módulos integrados -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
-              <!-- Centro -->
               <circle cx="120" cy="90" r="22" fill="#1d1d1f"/>
               <text x="120" y="93" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="#fff">ERP</text>
-              <!-- Conexiones -->
               <g stroke="#d2d2d7" stroke-width="1">
                 <line x1="120" y1="68" x2="120" y2="38"/>
                 <line x1="120" y1="112" x2="120" y2="142"/>
@@ -1089,15 +1061,14 @@
                 <line x1="105" y1="105" x2="75" y2="125"/>
                 <line x1="135" y1="105" x2="165" y2="125"/>
               </g>
-              <!-- Módulos -->
               <g font-family="Inter, sans-serif" font-size="8" fill="#1d1d1f" text-anchor="middle">
-                <rect x="100" y="22" width="40" height="20" rx="4" fill="#fff" stroke="#0071e3" stroke-width="1.2"/>
+                <rect x="100" y="22" width="40" height="20" rx="4" fill="#fff" stroke="#800020" stroke-width="1.2"/>
                 <text x="120" y="35">Ventas</text>
-                <rect x="100" y="138" width="40" height="20" rx="4" fill="#fff" stroke="#0071e3" stroke-width="1.2"/>
+                <rect x="100" y="138" width="40" height="20" rx="4" fill="#fff" stroke="#800020" stroke-width="1.2"/>
                 <text x="120" y="151">Finanzas</text>
-                <rect x="28" y="80"  width="40" height="20" rx="4" fill="#fff" stroke="#0071e3" stroke-width="1.2"/>
+                <rect x="28" y="80"  width="40" height="20" rx="4" fill="#fff" stroke="#800020" stroke-width="1.2"/>
                 <text x="48" y="93">CRM</text>
-                <rect x="172" y="80" width="40" height="20" rx="4" fill="#fff" stroke="#0071e3" stroke-width="1.2"/>
+                <rect x="172" y="80" width="40" height="20" rx="4" fill="#fff" stroke="#800020" stroke-width="1.2"/>
                 <text x="192" y="93">Inv.</text>
                 <rect x="50" y="42" width="34" height="18" rx="4" fill="#fff" stroke="#d2d2d7"/>
                 <text x="67" y="54">RH</text>
@@ -1115,34 +1086,30 @@
       </div>
     </div>
 
-    <!-- 08 Acompañamiento ejecutivo -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
           <div class="service-num">08</div>
           <h3>Acompañamiento ejecutivo</h3>
-          <p>Sesiones uno a uno para definir, ejecutar y ajustar iniciativas estratégicas con disciplina.</p>
+          <p>Sesiones uno a uno para define, ejecutar y ajustar iniciativas estratégicas con disciplina.</p>
           <span class="flip-hint">Ver gráfica</span>
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Roadmap / hitos -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
-              <!-- línea base -->
               <line x1="20" y1="90" x2="220" y2="90" stroke="#d2d2d7" stroke-width="1.5"/>
-              <!-- hitos -->
               <g font-family="Inter, sans-serif" font-size="8" fill="#6e6e73" text-anchor="middle">
                 <circle cx="40"  cy="90" r="8" fill="#1d1d1f"/>
                 <text x="40" y="93" fill="#fff" font-weight="500" font-size="7">1</text>
                 <text x="40" y="115">Diagnóstico</text>
                 <text x="40" y="70" fill="#1d1d1f">Sem 1</text>
 
-                <circle cx="100" cy="90" r="8" fill="#0071e3"/>
+                <circle cx="100" cy="90" r="8" fill="#800020"/>
                 <text x="100" y="93" fill="#fff" font-weight="500" font-size="7">2</text>
                 <text x="100" y="115">Plan</text>
                 <text x="100" y="70" fill="#1d1d1f">Sem 3</text>
 
-                <circle cx="160" cy="90" r="8" fill="#0071e3" opacity="0.6"/>
+                <circle cx="160" cy="90" r="8" fill="#800020" opacity="0.6"/>
                 <text x="160" y="93" fill="#fff" font-weight="500" font-size="7">3</text>
                 <text x="160" y="115">Ejecución</text>
                 <text x="160" y="70" fill="#1d1d1f">Sem 6</text>
@@ -1152,8 +1119,7 @@
                 <text x="210" y="115">Ajuste</text>
                 <text x="210" y="70" fill="#1d1d1f">Sem 12</text>
               </g>
-              <!-- progreso -->
-              <line x1="20" y1="90" x2="110" y2="90" stroke="#0071e3" stroke-width="2.5"/>
+              <line x1="20" y1="90" x2="110" y2="90" stroke="#800020" stroke-width="2.5"/>
               <text x="120" y="155" font-family="Inter, sans-serif" font-size="9" fill="#6e6e73" text-anchor="middle">Hoja de ruta · 12 semanas</text>
             </svg>
           </div>
@@ -1162,7 +1128,6 @@
       </div>
     </div>
 
-    <!-- 09 Diagnóstico empresarial -->
     <div class="service" tabindex="0">
       <div class="service-inner">
         <div class="service-face">
@@ -1173,10 +1138,8 @@
         </div>
         <div class="service-face service-back">
           <div class="viz">
-            <!-- Radar / spider chart -->
             <svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
               <g transform="translate(120 90)">
-                <!-- ejes del radar (6 puntas) -->
                 <g stroke="#d2d2d7" stroke-width="0.8" fill="none">
                   <polygon points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35"/>
                   <polygon points="0,-52.5 45.5,-26.2 45.5,26.2 0,52.5 -45.5,26.2 -45.5,-26.2"/>
@@ -1186,18 +1149,16 @@
                   <line x1="-60.6" y1="-35" x2="60.6" y2="35"/>
                   <line x1="-60.6" y1="35" x2="60.6" y2="-35"/>
                 </g>
-                <!-- área de diagnóstico -->
                 <polygon points="0,-55 52,-30 48,28 0,60 -42,24 -50,-29"
-                         fill="#0071e3" fill-opacity="0.18"
-                         stroke="#0071e3" stroke-width="1.8"/>
-                <!-- puntos -->
-                <g fill="#0071e3">
-                  <circle cx="0"   cy="-55" r="2.8"/>
-                  <circle cx="52"  cy="-30" r="2.8"/>
-                  <circle cx="48"  cy="28"  r="2.8"/>
-                  <circle cx="0"   cy="60"  r="2.8"/>
-                  <circle cx="-42" cy="24"  r="2.8"/>
-                  <circle cx="-50" cy="-29" r="2.8"/>
+                         fill="#800020" fill-opacity="0.18"
+                         stroke="#800020" stroke-width="1.8"/>
+                <g fill="#800020">
+                  <circle cx="0"    cy="-55" r="2.8"/>
+                  <circle cx="52"   cy="-30" r="2.8"/>
+                  <circle cx="48"   cy="28"  r="2.8"/>
+                  <circle cx="0"    cy="60"  r="2.8"/>
+                  <circle cx="-42"  cy="24"  r="2.8"/>
+                  <circle cx="-50"  cy="-29" r="2.8"/>
                 </g>
               </g>
               <g font-family="Inter, sans-serif" font-size="8" fill="#6e6e73" text-anchor="middle">
@@ -1218,7 +1179,6 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experiencia">
   <div class="section-label reveal">02 — Trayectoria</div>
   <h2 class="display section-title reveal">
@@ -1263,7 +1223,6 @@
   </div>
 </section>
 
-<!-- PORTFOLIO -->
 <section id="trabajos">
   <div class="section-label reveal">03 — Trabajos</div>
   <h2 class="display section-title reveal">
@@ -1276,35 +1235,31 @@
 
   <div class="portfolio-grid">
 
-    <!-- DASHBOARD 1: VENTAS -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-          <!-- Fondo del dashboard -->
           <rect width="400" height="250" fill="#fbfbfd"/>
-          <!-- Barra superior -->
           <rect x="0" y="0" width="400" height="22" fill="#1d1d1f"/>
           <circle cx="10" cy="11" r="2.5" fill="#ff5f57"/>
           <circle cx="20" cy="11" r="2.5" fill="#febc2e"/>
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">VENTAS · Q4 2025</text>
 
-          <!-- KPI Cards -->
           <g font-family="Inter, sans-serif">
             <rect x="12" y="32" width="86" height="42" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="18" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.5">VENTAS TOTALES</text>
             <text x="18" y="62" font-family="Fraunces, serif" font-size="15" fill="#1d1d1f" font-weight="500">$8.4M</text>
-            <text x="88" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 22%</text>
+            <text x="88" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 22%</text>
 
             <rect x="105" y="32" width="86" height="42" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="111" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.5">TICKET PROM.</text>
             <text x="111" y="62" font-family="Fraunces, serif" font-size="15" fill="#1d1d1f" font-weight="500">$42.5K</text>
-            <text x="181" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 8%</text>
+            <text x="181" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 8%</text>
 
             <rect x="198" y="32" width="86" height="42" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="204" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.5">CONVERSIÓN</text>
             <text x="204" y="62" font-family="Fraunces, serif" font-size="15" fill="#1d1d1f" font-weight="500">28.4%</text>
-            <text x="274" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 4pp</text>
+            <text x="274" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 4pp</text>
 
             <rect x="291" y="32" width="97" height="42" rx="5" fill="#1d1d1f"/>
             <text x="297" y="44" font-size="6" fill="#a8a8ad" letter-spacing="0.5">META Q4</text>
@@ -1312,12 +1267,10 @@
             <text x="383" y="62" font-size="6" fill="#28c840" text-anchor="end" font-weight="500">▲</text>
           </g>
 
-          <!-- Gráfica principal: tendencia mensual -->
           <rect x="12" y="84" width="240" height="120" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">TENDENCIA MENSUAL</text>
           <text x="22" y="106" font-family="Fraunces, serif" font-size="9" fill="#1d1d1f" font-weight="500">Ventas vs. Objetivo</text>
 
-          <!-- Eje -->
           <g stroke="#e5e5e7" stroke-width="0.5">
             <line x1="22" y1="190" x2="240" y2="190"/>
             <line x1="22" y1="170" x2="240" y2="170" opacity="0.5"/>
@@ -1325,7 +1278,6 @@
             <line x1="22" y1="130" x2="240" y2="130" opacity="0.5"/>
           </g>
 
-          <!-- Barras objetivo (grises) -->
           <g fill="#d2d2d7">
             <rect x="30" y="155" width="10" height="35" rx="1"/>
             <rect x="56" y="148" width="10" height="42" rx="1"/>
@@ -1336,33 +1288,30 @@
             <rect x="186" y="132" width="10" height="58" rx="1"/>
             <rect x="212" y="128" width="10" height="62" rx="1"/>
           </g>
-          <!-- Línea ventas reales -->
-          <polyline points="35,160 61,150 87,142 113,138 139,128 165,122 191,125 217,118" fill="none" stroke="#0071e3" stroke-width="1.5"/>
-          <g fill="#0071e3">
+          <polyline points="35,160 61,150 87,142 113,138 139,128 165,122 191,125 217,118" fill="none" stroke="#800020" stroke-width="1.5"/>
+          <g fill="#800020">
             <circle cx="35" cy="160" r="1.8"/><circle cx="61" cy="150" r="1.8"/>
             <circle cx="87" cy="142" r="1.8"/><circle cx="113" cy="138" r="1.8"/>
             <circle cx="139" cy="128" r="1.8"/><circle cx="165" cy="122" r="1.8"/>
             <circle cx="191" cy="125" r="1.8"/><circle cx="217" cy="118" r="2.5" fill="#1d1d1f"/>
           </g>
 
-          <!-- Donut: ventas por región -->
           <rect x="258" y="84" width="130" height="120" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
-          <text x="268" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">POR REGIÓN</text>
+          <text x="258" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">POR REGIÓN</text>
           <g transform="translate(298 145)">
             <circle r="28" fill="none" stroke="#e5e5e7" stroke-width="9"/>
-            <circle r="28" fill="none" stroke="#0071e3" stroke-width="9" stroke-dasharray="80 95" transform="rotate(-90)"/>
+            <circle r="28" fill="none" stroke="#800020" stroke-width="9" stroke-dasharray="80 95" transform="rotate(-90)"/>
             <circle r="28" fill="none" stroke="#1d1d1f" stroke-width="9" stroke-dasharray="50 130" transform="rotate(82)"/>
             <circle r="28" fill="none" stroke="#6e6e73" stroke-width="9" stroke-dasharray="32 150" transform="rotate(190)"/>
             <text y="2" text-anchor="middle" font-family="Fraunces, serif" font-size="10" fill="#1d1d1f" font-weight="500">100%</text>
           </g>
           <g font-family="Inter, sans-serif" font-size="6" fill="#424245">
-            <rect x="338" y="125" width="6" height="6" rx="1" fill="#0071e3"/><text x="348" y="130">Norte 45%</text>
+            <rect x="338" y="125" width="6" height="6" rx="1" fill="#800020"/><text x="348" y="130">Norte 45%</text>
             <rect x="338" y="138" width="6" height="6" rx="1" fill="#1d1d1f"/><text x="348" y="143">Centro 28%</text>
             <rect x="338" y="151" width="6" height="6" rx="1" fill="#6e6e73" opacity="0.7"/><text x="348" y="156">Sur 18%</text>
             <rect x="338" y="164" width="6" height="6" rx="1" fill="#e5e5e7"/><text x="348" y="169">Otros 9%</text>
           </g>
 
-          <!-- Tabla top productos -->
           <rect x="12" y="214" width="376" height="28" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="225" font-family="Inter, sans-serif" font-size="6" fill="#6e6e73" letter-spacing="0.4">TOP PRODUCTOS</text>
           <g font-family="Inter, sans-serif" font-size="6.5" fill="#1d1d1f">
@@ -1372,7 +1321,7 @@
             <text x="260" y="236">Producto D</text>
             <text x="340" y="236">Producto E</text>
           </g>
-          <g fill="#0071e3" opacity="0.7">
+          <g fill="#800020" opacity="0.7">
             <rect x="22" y="231" width="62" height="2" rx="1"/>
             <rect x="100" y="231" width="50" height="2" rx="1"/>
             <rect x="180" y="231" width="40" height="2" rx="1"/>
@@ -1388,7 +1337,6 @@
       </div>
     </article>
 
-    <!-- DASHBOARD 2: RETENCIÓN / CLIENTES -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1399,21 +1347,17 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">RETENCIÓN DE CLIENTES</text>
 
-          <!-- Big KPI hero -->
           <rect x="12" y="32" width="180" height="92" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="46" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">TASA DE RETENCIÓN</text>
           <text x="22" y="86" font-family="Fraunces, serif" font-size="36" fill="#1d1d1f" font-weight="500">87.4</text>
           <text x="106" y="86" font-family="Fraunces, serif" font-size="20" fill="#6e6e73">%</text>
-          <text x="22" y="104" font-family="Inter, sans-serif" font-size="6.5" fill="#0071e3" font-weight="500">▲ 3.2 puntos vs. trimestre anterior</text>
+          <text x="22" y="104" font-family="Inter, sans-serif" font-size="6.5" fill="#800020" font-weight="500">▲ 3.2 puntos vs. trimestre anterior</text>
           <text x="22" y="116" font-family="Inter, sans-serif" font-size="6" fill="#6e6e73" font-style="italic">objetivo 90% · brecha 2.6pp</text>
 
-          <!-- Cohort grid -->
           <rect x="200" y="32" width="188" height="92" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="210" y="46" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">ANÁLISIS DE COHORTES</text>
           <text x="210" y="56" font-family="Fraunces, serif" font-size="8" fill="#1d1d1f" font-weight="500">Retención por mes de adquisición</text>
           <g>
-            <!-- Heatmap cells: 6 cohortes x 6 meses -->
-            <!-- Cohorte etiquetas -->
             <g font-family="Inter, sans-serif" font-size="5" fill="#6e6e73">
               <text x="216" y="73">Ene</text>
               <text x="216" y="83">Feb</text>
@@ -1422,44 +1366,43 @@
               <text x="216" y="113">May</text>
               <text x="216" y="123">Jun</text>
             </g>
-            <!-- Cells -->
             <g>
-              <rect x="232" y="66" width="22" height="9" fill="#003d82"/>
-              <rect x="256" y="66" width="22" height="9" fill="#0071e3"/>
-              <rect x="280" y="66" width="22" height="9" fill="#0071e3" opacity="0.75"/>
-              <rect x="304" y="66" width="22" height="9" fill="#0071e3" opacity="0.6"/>
-              <rect x="328" y="66" width="22" height="9" fill="#0071e3" opacity="0.45"/>
-              <rect x="352" y="66" width="32" height="9" fill="#0071e3" opacity="0.35"/>
+              <rect x="232" y="66" width="22" height="9" fill="#4a0013"/>
+              <rect x="256" y="66" width="22" height="9" fill="#800020"/>
+              <rect x="280" y="66" width="22" height="9" fill="#800020" opacity="0.75"/>
+              <rect x="304" y="66" width="22" height="9" fill="#800020" opacity="0.6"/>
+              <rect x="328" y="66" width="22" height="9" fill="#800020" opacity="0.45"/>
+              <rect x="352" y="66" width="32" height="9" fill="#800020" opacity="0.35"/>
 
-              <rect x="232" y="76" width="22" height="9" fill="#003d82"/>
-              <rect x="256" y="76" width="22" height="9" fill="#0071e3"/>
-              <rect x="280" y="76" width="22" height="9" fill="#0071e3" opacity="0.8"/>
-              <rect x="304" y="76" width="22" height="9" fill="#0071e3" opacity="0.6"/>
-              <rect x="328" y="76" width="22" height="9" fill="#0071e3" opacity="0.5"/>
+              <rect x="232" y="76" width="22" height="9" fill="#4a0013"/>
+              <rect x="256" y="76" width="22" height="9" fill="#800020"/>
+              <rect x="280" y="76" width="22" height="9" fill="#800020" opacity="0.8"/>
+              <rect x="304" y="76" width="22" height="9" fill="#800020" opacity="0.6"/>
+              <rect x="328" y="76" width="22" height="9" fill="#800020" opacity="0.5"/>
               <rect x="352" y="76" width="32" height="9" fill="#e5e5e7"/>
 
-              <rect x="232" y="86" width="22" height="9" fill="#003d82"/>
-              <rect x="256" y="86" width="22" height="9" fill="#0071e3"/>
-              <rect x="280" y="86" width="22" height="9" fill="#0071e3" opacity="0.85"/>
-              <rect x="304" y="86" width="22" height="9" fill="#0071e3" opacity="0.65"/>
+              <rect x="232" y="86" width="22" height="9" fill="#4a0013"/>
+              <rect x="256" y="86" width="22" height="9" fill="#800020"/>
+              <rect x="280" y="86" width="22" height="9" fill="#800020" opacity="0.85"/>
+              <rect x="304" y="86" width="22" height="9" fill="#800020" opacity="0.65"/>
               <rect x="328" y="86" width="22" height="9" fill="#e5e5e7"/>
               <rect x="352" y="86" width="32" height="9" fill="#e5e5e7"/>
 
-              <rect x="232" y="96" width="22" height="9" fill="#003d82"/>
-              <rect x="256" y="96" width="22" height="9" fill="#0071e3" opacity="0.95"/>
-              <rect x="280" y="96" width="22" height="9" fill="#0071e3" opacity="0.7"/>
+              <rect x="232" y="96" width="22" height="9" fill="#4a0013"/>
+              <rect x="256" y="96" width="22" height="9" fill="#800020" opacity="0.95"/>
+              <rect x="280" y="96" width="22" height="9" fill="#800020" opacity="0.7"/>
               <rect x="304" y="96" width="22" height="9" fill="#e5e5e7"/>
               <rect x="328" y="96" width="22" height="9" fill="#e5e5e7"/>
               <rect x="352" y="96" width="32" height="9" fill="#e5e5e7"/>
 
-              <rect x="232" y="106" width="22" height="9" fill="#003d82"/>
-              <rect x="256" y="106" width="22" height="9" fill="#0071e3" opacity="0.9"/>
+              <rect x="232" y="106" width="22" height="9" fill="#4a0013"/>
+              <rect x="256" y="106" width="22" height="9" fill="#800020" opacity="0.9"/>
               <rect x="280" y="106" width="22" height="9" fill="#e5e5e7"/>
               <rect x="304" y="106" width="22" height="9" fill="#e5e5e7"/>
               <rect x="328" y="106" width="22" height="9" fill="#e5e5e7"/>
               <rect x="352" y="106" width="32" height="9" fill="#e5e5e7"/>
 
-              <rect x="232" y="116" width="22" height="9" fill="#003d82"/>
+              <rect x="232" y="116" width="22" height="9" fill="#4a0013"/>
               <rect x="256" y="116" width="22" height="9" fill="#e5e5e7"/>
               <rect x="280" y="116" width="22" height="9" fill="#e5e5e7"/>
               <rect x="304" y="116" width="22" height="9" fill="#e5e5e7"/>
@@ -1468,7 +1411,6 @@
             </g>
           </g>
 
-          <!-- Línea de churn -->
           <rect x="12" y="134" width="376" height="100" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="148" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">EVOLUCIÓN DE CHURN MENSUAL</text>
           <text x="22" y="158" font-family="Fraunces, serif" font-size="8" fill="#1d1d1f" font-weight="500">Últimos 12 meses</text>
@@ -1478,11 +1420,10 @@
             <line x1="22" y1="200" x2="378" y2="200" opacity="0.5"/>
             <line x1="22" y1="180" x2="378" y2="180" opacity="0.5"/>
           </g>
-          <!-- Área churn -->
           <path d="M 28 195 L 60 192 L 92 198 L 124 188 L 156 195 L 188 182 L 220 178 L 252 185 L 284 170 L 316 168 L 348 162 L 376 158 L 376 220 L 28 220 Z"
-                fill="#0071e3" fill-opacity="0.12"/>
+                fill="#800020" fill-opacity="0.12"/>
           <polyline points="28,195 60,192 92,198 124,188 156,195 188,182 220,178 252,185 284,170 316,168 348,162 376,158"
-                    fill="none" stroke="#0071e3" stroke-width="1.5"/>
+                    fill="none" stroke="#800020" stroke-width="1.5"/>
           <circle cx="376" cy="158" r="2.5" fill="#1d1d1f"/>
           <text x="370" y="152" font-family="Inter, sans-serif" font-size="6" fill="#1d1d1f" font-weight="600" text-anchor="end">2.1%</text>
 
@@ -1503,7 +1444,6 @@
       </div>
     </article>
 
-    <!-- DASHBOARD 3: OPERACIONES / TIENDAS -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1514,7 +1454,6 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">OPERACIONES · 100 TIENDAS</text>
 
-          <!-- KPIs en fila -->
           <g font-family="Inter, sans-serif">
             <rect x="12" y="32" width="120" height="36" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="20" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">TIENDAS ACTIVAS</text>
@@ -1531,62 +1470,58 @@
             <text x="380" y="60" font-size="6" fill="#28c840" text-anchor="end" font-weight="500">▲</text>
           </g>
 
-          <!-- Ranking tiendas -->
           <rect x="12" y="78" width="186" height="160" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="92" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">TOP 8 TIENDAS · VENTAS</text>
 
           <g font-family="Inter, sans-serif" font-size="6.5" fill="#1d1d1f">
             <text x="22" y="108">01</text><text x="38" y="108" fill="#424245">Tienda Norte</text>
             <rect x="105" y="103" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="103" width="70" height="6" rx="1" fill="#0071e3"/>
+            <rect x="105" y="103" width="70" height="6" rx="1" fill="#800020"/>
             <text x="180" y="108" fill="#1d1d1f" font-weight="500">98K</text>
 
             <text x="22" y="124">02</text><text x="38" y="124" fill="#424245">Centro Sur</text>
             <rect x="105" y="119" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="119" width="62" height="6" rx="1" fill="#0071e3"/>
+            <rect x="105" y="119" width="62" height="6" rx="1" fill="#800020"/>
             <text x="180" y="124" fill="#1d1d1f" font-weight="500">87K</text>
 
             <text x="22" y="140">03</text><text x="38" y="140" fill="#424245">Plaza Mayor</text>
             <rect x="105" y="135" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="135" width="55" height="6" rx="1" fill="#0071e3"/>
+            <rect x="105" y="135" width="55" height="6" rx="1" fill="#800020"/>
             <text x="180" y="140" fill="#1d1d1f" font-weight="500">78K</text>
 
             <text x="22" y="156">04</text><text x="38" y="156" fill="#424245">Av. Reforma</text>
             <rect x="105" y="151" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="151" width="50" height="6" rx="1" fill="#0071e3" opacity="0.85"/>
+            <rect x="105" y="151" width="50" height="6" rx="1" fill="#800020" opacity="0.85"/>
             <text x="180" y="156" fill="#1d1d1f" font-weight="500">71K</text>
 
             <text x="22" y="172">05</text><text x="38" y="172" fill="#424245">Galerías</text>
             <rect x="105" y="167" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="167" width="44" height="6" rx="1" fill="#0071e3" opacity="0.75"/>
+            <rect x="105" y="167" width="44" height="6" rx="1" fill="#800020" opacity="0.75"/>
             <text x="180" y="172" fill="#1d1d1f" font-weight="500">62K</text>
 
             <text x="22" y="188">06</text><text x="38" y="188" fill="#424245">La Isla</text>
             <rect x="105" y="183" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="183" width="38" height="6" rx="1" fill="#0071e3" opacity="0.65"/>
+            <rect x="105" y="183" width="38" height="6" rx="1" fill="#800020" opacity="0.65"/>
             <text x="180" y="188" fill="#1d1d1f" font-weight="500">54K</text>
 
             <text x="22" y="204">07</text><text x="38" y="204" fill="#424245">Polanco</text>
             <rect x="105" y="199" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="199" width="32" height="6" rx="1" fill="#0071e3" opacity="0.55"/>
+            <rect x="105" y="199" width="32" height="6" rx="1" fill="#800020" opacity="0.55"/>
             <text x="180" y="204" fill="#1d1d1f" font-weight="500">45K</text>
 
             <text x="22" y="220">08</text><text x="38" y="220" fill="#424245">Periférico</text>
             <rect x="105" y="215" width="70" height="6" rx="1" fill="#e5e5e7"/>
-            <rect x="105" y="215" width="28" height="6" rx="1" fill="#0071e3" opacity="0.45"/>
+            <rect x="105" y="215" width="28" height="6" rx="1" fill="#800020" opacity="0.45"/>
             <text x="180" y="220" fill="#1d1d1f" font-weight="500">38K</text>
           </g>
 
-          <!-- Mapa abstracto -->
           <rect x="205" y="78" width="183" height="160" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="215" y="92" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">DISTRIBUCIÓN GEOGRÁFICA</text>
 
-          <!-- Forma abstracta de México -->
           <path d="M 220 130 Q 230 110 250 108 L 280 105 Q 305 105 320 115 L 345 125 Q 365 135 370 155 L 365 180 Q 355 200 335 210 L 305 218 Q 280 220 260 215 L 235 205 Q 220 195 218 175 Z"
                 fill="#f5f5f7" stroke="#d2d2d7" stroke-width="0.5"/>
 
-          <!-- Puntos de tiendas -->
-          <g fill="#0071e3">
+          <g fill="#800020">
             <circle cx="240" cy="135" r="3"/><circle cx="265" cy="125" r="4"/>
             <circle cx="290" cy="130" r="3.5"/><circle cx="315" cy="140" r="2.5"/>
             <circle cx="340" cy="155" r="3"/><circle cx="275" cy="155" r="5" fill="#1d1d1f"/>
@@ -1594,7 +1529,7 @@
             <circle cx="290" cy="190" r="3"/><circle cx="320" cy="195" r="2"/>
             <circle cx="260" cy="195" r="2.5"/>
           </g>
-          <g fill="#0071e3" opacity="0.5">
+          <g fill="#800020" opacity="0.5">
             <circle cx="235" cy="160" r="2"/><circle cx="285" cy="145" r="1.8"/>
             <circle cx="325" cy="175" r="2"/><circle cx="270" cy="180" r="1.5"/>
             <circle cx="300" cy="155" r="1.8"/>
@@ -1610,7 +1545,6 @@
       </div>
     </article>
 
-    <!-- DASHBOARD 4: FINANZAS -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1621,12 +1555,11 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">FINANZAS · P&amp;L EJECUTIVO</text>
 
-          <!-- KPI cards -->
           <g font-family="Inter, sans-serif">
             <rect x="12" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="20" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">INGRESOS</text>
             <text x="20" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">$24.8M</text>
-            <text x="95" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 14%</text>
+            <text x="95" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 14%</text>
 
             <rect x="110" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="118" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">COSTOS</text>
@@ -1636,14 +1569,13 @@
             <rect x="208" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="216" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">EBITDA</text>
             <text x="216" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">$8.6M</text>
-            <text x="291" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 26%</text>
+            <text x="291" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 26%</text>
 
             <rect x="306" y="32" width="82" height="40" rx="5" fill="#1d1d1f"/>
             <text x="314" y="44" font-size="6" fill="#a8a8ad" letter-spacing="0.4">MARGEN</text>
             <text x="314" y="62" font-family="Fraunces, serif" font-size="13" fill="#fff" font-weight="500">34.7%</text>
           </g>
 
-          <!-- Waterfall chart -->
           <rect x="12" y="82" width="240" height="156" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">PUENTE INGRESOS → UTILIDAD</text>
 
@@ -1651,43 +1583,35 @@
             <line x1="22" y1="220" x2="240" y2="220"/>
           </g>
 
-          <!-- Waterfall bars -->
           <g font-family="Inter, sans-serif" font-size="5" fill="#6e6e73">
-            <!-- Ingresos (azul oscuro completo) -->
             <rect x="30" y="120" width="22" height="100" fill="#1d1d1f"/>
             <text x="41" y="231" text-anchor="middle">Ing.</text>
             <text x="41" y="115" text-anchor="middle" font-size="5.5" fill="#1d1d1f" font-weight="600">24.8</text>
 
-            <!-- Costos (gris bajando) -->
             <rect x="60" y="120" width="22" height="58" fill="#6e6e73" opacity="0.6"/>
             <line x1="52" y1="120" x2="60" y2="120" stroke="#6e6e73" stroke-width="0.5" stroke-dasharray="2 2"/>
             <text x="71" y="231" text-anchor="middle">CMV</text>
             <text x="71" y="115" text-anchor="middle" font-size="5.5" fill="#6e6e73" font-weight="600">−9.5</text>
 
-            <!-- Gastos op -->
             <rect x="90" y="178" width="22" height="35" fill="#6e6e73" opacity="0.5"/>
             <line x1="82" y1="178" x2="90" y2="178" stroke="#6e6e73" stroke-width="0.5" stroke-dasharray="2 2"/>
             <text x="101" y="231" text-anchor="middle">G.Op</text>
             <text x="101" y="173" text-anchor="middle" font-size="5.5" fill="#6e6e73" font-weight="600">−4.5</text>
 
-            <!-- D&amp;A -->
             <rect x="120" y="213" width="22" height="14" fill="#6e6e73" opacity="0.4"/>
             <line x1="112" y1="213" x2="120" y2="213" stroke="#6e6e73" stroke-width="0.5" stroke-dasharray="2 2"/>
             <text x="131" y="231" text-anchor="middle">D&amp;A</text>
             <text x="131" y="208" text-anchor="middle" font-size="5.5" fill="#6e6e73" font-weight="600">−1.7</text>
 
-            <!-- Otros -->
-            <rect x="150" y="227" width="22" height="-7" fill="#0071e3" opacity="0.6"/>
+            <rect x="150" y="227" width="22" height="-7" fill="#800020" opacity="0.6"/>
             <text x="161" y="231" text-anchor="middle">Otros</text>
-            <text x="161" y="217" text-anchor="middle" font-size="5.5" fill="#0071e3" font-weight="600">+0.3</text>
+            <text x="161" y="217" text-anchor="middle" font-size="5.5" fill="#800020" font-weight="600">+0.3</text>
 
-            <!-- Utilidad neta -->
-            <rect x="180" y="180" width="22" height="40" fill="#0071e3"/>
+            <rect x="180" y="180" width="22" height="40" fill="#800020"/>
             <text x="191" y="231" text-anchor="middle">Util.</text>
-            <text x="191" y="175" text-anchor="middle" font-size="6" fill="#0071e3" font-weight="700">9.4</text>
+            <text x="191" y="175" text-anchor="middle" font-size="6" fill="#800020" font-weight="700">9.4</text>
           </g>
 
-          <!-- Composición de gastos -->
           <rect x="258" y="82" width="130" height="76" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="268" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">COMPOSICIÓN GASTOS</text>
 
@@ -1699,31 +1623,29 @@
 
             <text x="268" y="125">Marketing</text>
             <rect x="305" y="121" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="305" y="121" width="32" height="4" rx="0.5" fill="#0071e3"/>
+            <rect x="305" y="121" width="32" height="4" rx="0.5" fill="#800020"/>
             <text x="385" y="125" text-anchor="end" font-weight="500" fill="#1d1d1f">24%</text>
 
             <text x="268" y="138">Operación</text>
             <rect x="305" y="134" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="305" y="134" width="24" height="4" rx="0.5" fill="#0071e3" opacity="0.7"/>
+            <rect x="305" y="134" width="24" height="4" rx="0.5" fill="#800020" opacity="0.7"/>
             <text x="385" y="138" text-anchor="end" font-weight="500" fill="#1d1d1f">18%</text>
 
             <text x="268" y="151">Otros</text>
             <rect x="305" y="147" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="305" y="147" width="18" height="4" rx="0.5" fill="#0071e3" opacity="0.5"/>
+            <rect x="305" y="147" width="18" height="4" rx="0.5" fill="#800020" opacity="0.5"/>
             <text x="385" y="151" text-anchor="end" font-weight="500" fill="#1d1d1f">16%</text>
           </g>
 
-          <!-- Cash flow mini chart -->
           <rect x="258" y="164" width="130" height="74" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="268" y="178" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">FLUJO DE CAJA</text>
           <text x="268" y="192" font-family="Fraunces, serif" font-size="14" fill="#1d1d1f" font-weight="500">$4.2M</text>
-          <text x="268" y="202" font-family="Inter, sans-serif" font-size="5.5" fill="#0071e3" font-weight="500">▲ 18% YoY</text>
+          <text x="268" y="202" font-family="Inter, sans-serif" font-size="5.5" fill="#800020" font-weight="500">▲ 18% YoY</text>
 
-          <!-- mini sparkline -->
           <polyline points="270,228 282,225 294,222 306,224 318,218 330,215 342,210 354,212 366,206 378,200"
-                    fill="none" stroke="#0071e3" stroke-width="1.2"/>
+                    fill="none" stroke="#800020" stroke-width="1.2"/>
           <polyline points="270,228 282,225 294,222 306,224 318,218 330,215 342,210 354,212 366,206 378,200 378,232 270,232"
-                    fill="#0071e3" fill-opacity="0.1"/>
+                    fill="#800020" fill-opacity="0.1"/>
         </svg>
       </div>
       <div class="portfolio-meta">
@@ -1737,7 +1659,6 @@
 
   <div class="portfolio-grid row-2">
 
-    <!-- DASHBOARD 5: LOGÍSTICA / CADENA DE SUMINISTRO -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1748,17 +1669,16 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">LOGÍSTICA · CADENA DE SUMINISTRO</text>
 
-          <!-- KPIs en fila -->
           <g font-family="Inter, sans-serif">
             <rect x="12" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="20" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">ENTREGAS A TIEMPO</text>
             <text x="20" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">94.2%</text>
-            <text x="95" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 3pp</text>
+            <text x="95" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 3pp</text>
 
             <rect x="110" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="118" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">LEAD TIME</text>
             <text x="118" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">3.8 d</text>
-            <text x="193" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">−12%</text>
+            <text x="193" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">−12%</text>
 
             <rect x="208" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="216" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">COSTO/ENVÍO</text>
@@ -1770,25 +1690,21 @@
             <text x="314" y="62" font-family="Fraunces, serif" font-size="13" fill="#fff" font-weight="500">97.8%</text>
           </g>
 
-          <!-- Flujo de la cadena de suministro -->
           <rect x="12" y="82" width="240" height="78" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">FLUJO LOGÍSTICO</text>
 
-          <!-- 4 nodos conectados -->
           <g>
-            <!-- Conexiones -->
-            <line x1="48" y1="130" x2="98" y2="130" stroke="#0071e3" stroke-width="1.2"/>
-            <line x1="124" y1="130" x2="174" y2="130" stroke="#0071e3" stroke-width="1.2"/>
-            <line x1="200" y1="130" x2="222" y2="130" stroke="#0071e3" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.5"/>
+            <line x1="48" y1="130" x2="98" y2="130" stroke="#800020" stroke-width="1.2"/>
+            <line x1="124" y1="130" x2="174" y2="130" stroke="#800020" stroke-width="1.2"/>
+            <line x1="200" y1="130" x2="222" y2="130" stroke="#800020" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.5"/>
 
-            <!-- Nodos -->
             <circle cx="35" cy="130" r="11" fill="#1d1d1f"/>
             <text x="35" y="133" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#fff" font-weight="600">CD</text>
 
-            <circle cx="111" cy="130" r="11" fill="#0071e3"/>
+            <circle cx="111" cy="130" r="11" fill="#800020"/>
             <text x="111" y="133" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#fff" font-weight="600">DC</text>
 
-            <circle cx="187" cy="130" r="11" fill="#0071e3" opacity="0.7"/>
+            <circle cx="187" cy="130" r="11" fill="#800020" opacity="0.7"/>
             <text x="187" y="133" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#fff" font-weight="600">ÚLT</text>
 
             <circle cx="232" cy="130" r="8" fill="#fff" stroke="#1d1d1f" stroke-width="1"/>
@@ -1801,46 +1717,42 @@
             <text x="232" y="152">Cliente</text>
           </g>
 
-          <!-- Mini stats abajo -->
           <g font-family="Inter, sans-serif" font-size="5" fill="#424245">
             <text x="35" y="106" text-anchor="middle">1.2d</text>
             <text x="111" y="106" text-anchor="middle">0.8d</text>
             <text x="187" y="106" text-anchor="middle">1.8d</text>
           </g>
 
-          <!-- Gráfica inventario -->
           <rect x="258" y="82" width="130" height="78" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
-          <text x="268" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">ROTACIÓN INVENTARIO</text>
-          <text x="268" y="115" font-family="Fraunces, serif" font-size="18" fill="#1d1d1f" font-weight="500">8.4x</text>
-          <text x="268" y="124" font-family="Inter, sans-serif" font-size="5.5" fill="#0071e3" font-weight="500">▲ 1.2x vs. año anterior</text>
+          <text x="258" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">ROTACIÓN INVENTARIO</text>
+          <text x="258" y="115" font-family="Fraunces, serif" font-size="18" fill="#1d1d1f" font-weight="500">8.4x</text>
+          <text x="268" y="124" font-family="Inter, sans-serif" font-size="5.5" fill="#800020" font-weight="500">▲ 1.2x vs. año anterior</text>
 
-          <!-- mini sparkline -->
           <polyline points="268,148 282,145 296,148 310,142 324,138 338,140 352,135 366,130 380,128"
-                    fill="none" stroke="#0071e3" stroke-width="1.5"/>
-          <g fill="#0071e3">
+                    fill="none" stroke="#800020" stroke-width="1.5"/>
+          <g fill="#800020">
             <circle cx="268" cy="148" r="1.5"/><circle cx="296" cy="148" r="1.5"/>
             <circle cx="324" cy="138" r="1.5"/><circle cx="352" cy="135" r="1.5"/>
             <circle cx="380" cy="128" r="2" fill="#1d1d1f"/>
           </g>
 
-          <!-- Tabla de transportistas -->
           <rect x="12" y="170" width="376" height="68" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="184" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">DESEMPEÑO POR TRANSPORTISTA</text>
 
           <g font-family="Inter, sans-serif" font-size="6" fill="#1d1d1f">
             <text x="22" y="200">Transportista A</text>
             <rect x="125" y="195" width="200" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="125" y="195" width="190" height="5" rx="0.5" fill="#0071e3"/>
+            <rect x="125" y="195" width="190" height="5" rx="0.5" fill="#800020"/>
             <text x="380" y="200" text-anchor="end" font-weight="500">96.4%</text>
 
             <text x="22" y="214">Transportista B</text>
             <rect x="125" y="209" width="200" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="125" y="209" width="172" height="5" rx="0.5" fill="#0071e3" opacity="0.85"/>
+            <rect x="125" y="209" width="172" height="5" rx="0.5" fill="#800020" opacity="0.85"/>
             <text x="380" y="214" text-anchor="end" font-weight="500">91.8%</text>
 
             <text x="22" y="228">Transportista C</text>
             <rect x="125" y="223" width="200" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="125" y="223" width="148" height="5" rx="0.5" fill="#0071e3" opacity="0.65"/>
+            <rect x="125" y="223" width="148" height="5" rx="0.5" fill="#800020" opacity="0.65"/>
             <text x="380" y="228" text-anchor="end" font-weight="500">84.2%</text>
           </g>
         </svg>
@@ -1852,7 +1764,6 @@
       </div>
     </article>
 
-    <!-- DASHBOARD 6: RECURSOS HUMANOS -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1863,31 +1774,28 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">RECURSOS HUMANOS · TALENTO</text>
 
-          <!-- KPI grande izquierda -->
           <rect x="12" y="32" width="120" height="92" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="46" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">HEADCOUNT</text>
           <text x="22" y="78" font-family="Fraunces, serif" font-size="32" fill="#1d1d1f" font-weight="500">847</text>
-          <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#0071e3" font-weight="500">▲ 12% YoY</text>
+          <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#800020" font-weight="500">▲ 12% YoY</text>
           <text x="22" y="116" font-family="Inter, sans-serif" font-size="6" fill="#6e6e73" font-style="italic">+92 contrataciones netas</text>
 
-          <!-- Composición por área (donut) -->
           <rect x="139" y="32" width="120" height="92" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="149" y="46" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">POR ÁREA</text>
           <g transform="translate(170 82)">
             <circle r="22" fill="none" stroke="#e5e5e7" stroke-width="7"/>
             <circle r="22" fill="none" stroke="#1d1d1f" stroke-width="7" stroke-dasharray="55 83" transform="rotate(-90)"/>
-            <circle r="22" fill="none" stroke="#0071e3" stroke-width="7" stroke-dasharray="40 98" transform="rotate(70)"/>
-            <circle r="22" fill="none" stroke="#0071e3" stroke-width="7" stroke-dasharray="25 113" transform="rotate(174)" opacity="0.6"/>
+            <circle r="22" fill="none" stroke="#800020" stroke-width="7" stroke-dasharray="40 98" transform="rotate(70)"/>
+            <circle r="22" fill="none" stroke="#800020" stroke-width="7" stroke-dasharray="25 113" transform="rotate(174)" opacity="0.6"/>
             <text y="2" text-anchor="middle" font-family="Fraunces, serif" font-size="8" fill="#1d1d1f" font-weight="500">847</text>
           </g>
           <g font-family="Inter, sans-serif" font-size="5.5" fill="#424245">
             <rect x="200" y="62" width="5" height="5" rx="1" fill="#1d1d1f"/><text x="208" y="66.5">Op. 40%</text>
-            <rect x="200" y="73" width="5" height="5" rx="1" fill="#0071e3"/><text x="208" y="77.5">Vtas. 28%</text>
-            <rect x="200" y="84" width="5" height="5" rx="1" fill="#0071e3" opacity="0.6"/><text x="208" y="88.5">Adm. 18%</text>
+            <rect x="200" y="73" width="5" height="5" rx="1" fill="#800020"/><text x="208" y="77.5">Vtas. 28%</text>
+            <rect x="200" y="84" width="5" height="5" rx="1" fill="#800020" opacity="0.6"/><text x="208" y="88.5">Adm. 18%</text>
             <rect x="200" y="95" width="5" height="5" rx="1" fill="#e5e5e7"/><text x="208" y="99.5">Otros 14%</text>
           </g>
 
-          <!-- Rotación -->
           <rect x="266" y="32" width="122" height="92" rx="5" fill="#1d1d1f"/>
           <text x="276" y="46" font-family="Inter, sans-serif" font-size="6.5" fill="#a8a8ad" letter-spacing="0.4">ROTACIÓN ANUAL</text>
           <text x="276" y="78" font-family="Fraunces, serif" font-size="28" fill="#fff" font-weight="500">8.4</text>
@@ -1895,7 +1803,6 @@
           <text x="276" y="96" font-family="Inter, sans-serif" font-size="6" fill="#28c840" font-weight="500">▼ 2.1pp · mejor que sector</text>
           <text x="276" y="116" font-family="Inter, sans-serif" font-size="5.5" fill="#a8a8ad" font-style="italic">benchmark sector: 12.5%</text>
 
-          <!-- Satisfacción / clima -->
           <rect x="12" y="134" width="186" height="104" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="22" y="148" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">ENGAGEMENT · ENCUESTA</text>
           <text x="22" y="160" font-family="Fraunces, serif" font-size="9" fill="#1d1d1f" font-weight="500">Resultados por dimensión</text>
@@ -1903,58 +1810,56 @@
           <g font-family="Inter, sans-serif" font-size="5.5" fill="#424245">
             <text x="22" y="178">Liderazgo</text>
             <rect x="80" y="174" width="90" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="80" y="174" width="76" height="5" rx="0.5" fill="#0071e3"/>
+            <rect x="80" y="174" width="76" height="5" rx="0.5" fill="#800020"/>
             <text x="190" y="178" text-anchor="end" font-weight="600" fill="#1d1d1f">84</text>
 
             <text x="22" y="192">Reconocimiento</text>
             <rect x="80" y="188" width="90" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="80" y="188" width="62" height="5" rx="0.5" fill="#0071e3" opacity="0.85"/>
+            <rect x="80" y="188" width="62" height="5" rx="0.5" fill="#800020" opacity="0.85"/>
             <text x="190" y="192" text-anchor="end" font-weight="600" fill="#1d1d1f">69</text>
 
             <text x="22" y="206">Crecimiento</text>
             <rect x="80" y="202" width="90" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="80" y="202" width="71" height="5" rx="0.5" fill="#0071e3" opacity="0.9"/>
+            <rect x="80" y="202" width="71" height="5" rx="0.5" fill="#800020" opacity="0.9"/>
             <text x="190" y="206" text-anchor="end" font-weight="600" fill="#1d1d1f">79</text>
 
             <text x="22" y="220">Cultura</text>
             <rect x="80" y="216" width="90" height="5" rx="0.5" fill="#e5e5e7"/>
-            <rect x="80" y="216" width="82" height="5" rx="0.5" fill="#0071e3"/>
+            <rect x="80" y="216" width="82" height="5" rx="0.5" fill="#800020"/>
             <text x="190" y="220" text-anchor="end" font-weight="600" fill="#1d1d1f">91</text>
 
             <text x="22" y="232" fill="#6e6e73" font-style="italic">eNPS</text>
-            <text x="190" y="232" text-anchor="end" font-weight="600" fill="#0071e3" font-size="6.5">+42</text>
+            <text x="190" y="232" text-anchor="end" font-weight="600" fill="#800020" font-size="6.5">+42</text>
           </g>
 
-          <!-- Pirámide etaria -->
           <rect x="205" y="134" width="183" height="104" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="215" y="148" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">PIRÁMIDE ETARIA</text>
 
           <line x1="296" y1="158" x2="296" y2="232" stroke="#e5e5e7" stroke-width="0.5"/>
 
           <g font-family="Inter, sans-serif" font-size="5" fill="#6e6e73">
-            <!-- Hombres a la izquierda, mujeres a la derecha -->
             <text x="215" y="168">55+</text>
             <rect x="276" y="163" width="20" height="6" fill="#1d1d1f" opacity="0.5"/>
-            <rect x="296" y="163" width="14" height="6" fill="#0071e3" opacity="0.5"/>
+            <rect x="296" y="163" width="14" height="6" fill="#800020" opacity="0.5"/>
 
             <text x="215" y="180">45-54</text>
             <rect x="262" y="175" width="34" height="6" fill="#1d1d1f" opacity="0.7"/>
-            <rect x="296" y="175" width="28" height="6" fill="#0071e3" opacity="0.7"/>
+            <rect x="296" y="175" width="28" height="6" fill="#800020" opacity="0.7"/>
 
             <text x="215" y="192">35-44</text>
             <rect x="245" y="187" width="51" height="6" fill="#1d1d1f"/>
-            <rect x="296" y="187" width="44" height="6" fill="#0071e3"/>
+            <rect x="296" y="187" width="44" height="6" fill="#800020"/>
 
             <text x="215" y="204">25-34</text>
             <rect x="238" y="199" width="58" height="6" fill="#1d1d1f"/>
-            <rect x="296" y="199" width="55" height="6" fill="#0071e3"/>
+            <rect x="296" y="199" width="55" height="6" fill="#800020"/>
 
             <text x="215" y="216">18-24</text>
             <rect x="266" y="211" width="30" height="6" fill="#1d1d1f" opacity="0.6"/>
-            <rect x="296" y="211" width="28" height="6" fill="#0071e3" opacity="0.6"/>
+            <rect x="296" y="211" width="28" height="6" fill="#800020" opacity="0.6"/>
 
             <text x="262" y="230" font-weight="600" fill="#1d1d1f">M</text>
-            <text x="330" y="230" font-weight="600" fill="#0071e3">F</text>
+            <text x="330" y="230" font-weight="600" fill="#800020">F</text>
           </g>
         </svg>
       </div>
@@ -1965,7 +1870,6 @@
       </div>
     </article>
 
-    <!-- DASHBOARD 7: MARKETING DIGITAL -->
     <article class="portfolio-item reveal">
       <div class="portfolio-thumb">
         <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -1976,7 +1880,6 @@
           <circle cx="30" cy="11" r="2.5" fill="#28c840"/>
           <text x="200" y="14.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#fff" font-weight="500" letter-spacing="0.5">MARKETING · DESEMPEÑO DIGITAL</text>
 
-          <!-- KPIs -->
           <g font-family="Inter, sans-serif">
             <rect x="12" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="20" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">INVERSIÓN</text>
@@ -1986,81 +1889,70 @@
             <rect x="110" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="118" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">ROAS</text>
             <text x="118" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">4.8x</text>
-            <text x="193" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▲ 22%</text>
+            <text x="193" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▲ 22%</text>
 
             <rect x="208" y="32" width="91" height="40" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
             <text x="216" y="44" font-size="6" fill="#6e6e73" letter-spacing="0.4">CPL</text>
             <text x="216" y="62" font-family="Fraunces, serif" font-size="13" fill="#1d1d1f" font-weight="500">$48</text>
-            <text x="291" y="62" font-size="6" fill="#0071e3" text-anchor="end" font-weight="500">▼ 18%</text>
+            <text x="291" y="62" font-size="6" fill="#800020" text-anchor="end" font-weight="500">▼ 18%</text>
 
             <rect x="306" y="32" width="82" height="40" rx="5" fill="#1d1d1f"/>
             <text x="314" y="44" font-size="6" fill="#a8a8ad" letter-spacing="0.4">CONV.</text>
             <text x="314" y="62" font-family="Fraunces, serif" font-size="13" fill="#fff" font-weight="500">5,942</text>
           </g>
 
-          <!-- Funnel de marketing -->
-          <rect x="12" y="82" width="186" height="156" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
-          <text x="22" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">FUNNEL DE CONVERSIÓN</text>
-
           <g font-family="Inter, sans-serif">
-            <!-- Impresiones -->
-            <rect x="30" y="108" width="150" height="20" rx="2" fill="#0071e3"/>
+            <rect x="30" y="108" width="150" height="20" rx="2" fill="#800020"/>
             <text x="38" y="121" font-size="6" fill="#fff" font-weight="500">IMPRESIONES</text>
             <text x="172" y="121" font-size="7" fill="#fff" font-weight="600" text-anchor="end">2.4M</text>
 
-            <!-- Clics -->
-            <rect x="44" y="132" width="122" height="20" rx="2" fill="#0071e3" opacity="0.85"/>
+            <rect x="44" y="132" width="122" height="20" rx="2" fill="#800020" opacity="0.85"/>
             <text x="52" y="145" font-size="6" fill="#fff" font-weight="500">CLICS</text>
             <text x="158" y="145" font-size="7" fill="#fff" font-weight="600" text-anchor="end">96.8K</text>
             <text x="172" y="121" font-size="4.5" fill="#fff" opacity="0.7" text-anchor="end"></text>
             <text x="22" y="146" font-size="4.5" fill="#6e6e73">4.0%</text>
 
-            <!-- Leads -->
-            <rect x="58" y="156" width="94" height="20" rx="2" fill="#0071e3" opacity="0.7"/>
+            <rect x="58" y="156" width="94" height="20" rx="2" fill="#800020" opacity="0.7"/>
             <text x="66" y="169" font-size="6" fill="#fff" font-weight="500">LEADS</text>
             <text x="144" y="169" font-size="7" fill="#fff" font-weight="600" text-anchor="end">22.4K</text>
             <text x="22" y="170" font-size="4.5" fill="#6e6e73">23.1%</text>
 
-            <!-- MQL -->
-            <rect x="72" y="180" width="66" height="20" rx="2" fill="#0071e3" opacity="0.55"/>
+            <rect x="72" y="180" width="66" height="20" rx="2" fill="#800020" opacity="0.55"/>
             <text x="80" y="193" font-size="6" fill="#fff" font-weight="500">MQL</text>
             <text x="130" y="193" font-size="7" fill="#fff" font-weight="600" text-anchor="end">11.8K</text>
             <text x="22" y="194" font-size="4.5" fill="#6e6e73">52.7%</text>
 
-            <!-- Clientes -->
             <rect x="86" y="204" width="38" height="20" rx="2" fill="#1d1d1f"/>
             <text x="94" y="217" font-size="6" fill="#fff" font-weight="500">VENTAS</text>
             <text x="118" y="217" font-size="7" fill="#fff" font-weight="600" text-anchor="end">5,942</text>
-            <text x="22" y="218" font-size="4.5" fill="#0071e3" font-weight="500">50.4%</text>
+            <text x="22" y="218" font-size="4.5" fill="#800020" font-weight="500">50.4%</text>
           </g>
 
-          <!-- Canales -->
           <rect x="205" y="82" width="183" height="74" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="215" y="96" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">DESEMPEÑO POR CANAL</text>
 
           <g font-family="Inter, sans-serif" font-size="5.5" fill="#424245">
             <text x="215" y="112">Google Ads</text>
             <rect x="280" y="108" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="280" y="108" width="62" height="4" rx="0.5" fill="#0071e3"/>
+            <rect x="280" y="108" width="62" height="4" rx="0.5" fill="#800020"/>
             <text x="385" y="112" text-anchor="end" font-weight="600" fill="#1d1d1f">38%</text>
 
             <text x="215" y="124">Meta Ads</text>
             <rect x="280" y="120" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="280" y="120" width="48" height="4" rx="0.5" fill="#0071e3" opacity="0.85"/>
+            <rect x="280" y="120" width="48" height="4" rx="0.5" fill="#800020" opacity="0.85"/>
             <text x="385" y="124" text-anchor="end" font-weight="600" fill="#1d1d1f">28%</text>
 
             <text x="215" y="136">LinkedIn</text>
             <rect x="280" y="132" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="280" y="132" width="30" height="4" rx="0.5" fill="#0071e3" opacity="0.65"/>
+            <rect x="280" y="132" width="30" height="4" rx="0.5" fill="#800020" opacity="0.65"/>
             <text x="385" y="136" text-anchor="end" font-weight="600" fill="#1d1d1f">19%</text>
 
             <text x="215" y="148">Orgánico</text>
             <rect x="280" y="144" width="78" height="4" rx="0.5" fill="#e5e5e7"/>
-            <rect x="280" y="144" width="24" height="4" rx="0.5" fill="#0071e3" opacity="0.5"/>
+            <rect x="280" y="144" width="24" height="4" rx="0.5" fill="#800020" opacity="0.5"/>
             <text x="385" y="148" text-anchor="end" font-weight="600" fill="#1d1d1f">15%</text>
           </g>
 
-          <!-- Engagement gráfica -->
           <rect x="205" y="164" width="183" height="74" rx="5" fill="#fff" stroke="#e5e5e7" stroke-width="0.5"/>
           <text x="215" y="178" font-family="Inter, sans-serif" font-size="6.5" fill="#6e6e73" letter-spacing="0.4">CTR Y ENGAGEMENT</text>
 
@@ -2070,23 +1962,21 @@
             <line x1="215" y1="192" x2="378" y2="192" opacity="0.5"/>
           </g>
 
-          <!-- Barras CTR -->
           <g>
-            <rect x="222" y="208" width="10" height="17" rx="1" fill="#0071e3" opacity="0.4"/>
-            <rect x="240" y="200" width="10" height="25" rx="1" fill="#0071e3" opacity="0.5"/>
-            <rect x="258" y="205" width="10" height="20" rx="1" fill="#0071e3" opacity="0.6"/>
-            <rect x="276" y="198" width="10" height="27" rx="1" fill="#0071e3" opacity="0.7"/>
-            <rect x="294" y="195" width="10" height="30" rx="1" fill="#0071e3" opacity="0.8"/>
-            <rect x="312" y="190" width="10" height="35" rx="1" fill="#0071e3" opacity="0.9"/>
-            <rect x="330" y="188" width="10" height="37" rx="1" fill="#0071e3"/>
+            <rect x="222" y="208" width="10" height="17" rx="1" fill="#800020" opacity="0.4"/>
+            <rect x="240" y="200" width="10" height="25" rx="1" fill="#800020" opacity="0.5"/>
+            <rect x="258" y="205" width="10" height="20" rx="1" fill="#800020" opacity="0.6"/>
+            <rect x="276" y="198" width="10" height="27" rx="1" fill="#800020" opacity="0.7"/>
+            <rect x="294" y="195" width="10" height="30" rx="1" fill="#800020" opacity="0.8"/>
+            <rect x="312" y="190" width="10" height="35" rx="1" fill="#800020" opacity="0.9"/>
+            <rect x="330" y="188" width="10" height="37" rx="1" fill="#800020"/>
             <rect x="348" y="184" width="10" height="41" rx="1" fill="#1d1d1f"/>
           </g>
 
-          <!-- línea CTR % -->
           <polyline points="227,215 245,210 263,212 281,206 299,202 317,196 335,194 353,188"
                     fill="none" stroke="#1d1d1f" stroke-width="1" stroke-dasharray="2 2"/>
 
-          <text x="367" y="190" font-family="Inter, sans-serif" font-size="6" fill="#0071e3" font-weight="600">4.0%</text>
+          <text x="367" y="190" font-family="Inter, sans-serif" font-size="6" fill="#800020" font-weight="600">4.0%</text>
         </svg>
       </div>
       <div class="portfolio-meta">
@@ -2101,7 +1991,6 @@
   <p class="portfolio-note reveal">Pasa el cursor sobre cualquier tablero para verlo con detalle. Cada uno representa un caso real desarrollado para distintos sectores.</p>
 </section>
 
-<!-- PACKAGES / PRICING -->
 <section id="paquetes">
   <div class="section-label reveal">04 — Paquetes</div>
   <h2 class="display section-title reveal">
@@ -2114,7 +2003,6 @@
 
   <div class="packages-grid">
 
-    <!-- PAQUETE 1 -->
     <article class="package featured reveal">
       <div class="package-tag">Punto de entrada</div>
       <h3>Diagnóstico <em>por servicio</em></h3>
@@ -2165,7 +2053,6 @@
       </a>
     </article>
 
-    <!-- PAQUETE 2 -->
     <article class="package reveal">
       <div class="package-tag">Ejecución dirigida</div>
       <h3>Proyectos <em>estratégicos</em></h3>
@@ -2216,7 +2103,6 @@
       </a>
     </article>
 
-    <!-- PAQUETE 3 -->
     <article class="package reveal">
       <div class="package-tag">Continuidad</div>
       <h3>Acompañamiento <em>mensual</em></h3>
@@ -2267,7 +2153,6 @@
       </a>
     </article>
 
-    <!-- PAQUETE 4 -->
     <article class="package reveal">
       <div class="package-tag">Liderazgo externo</div>
       <h3>Gestión y dirección <em>del proyecto</em></h3>
@@ -2326,7 +2211,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contacto">
   <div class="section-label reveal">05 — Contacto</div>
   <h2 class="display section-title reveal">
@@ -2437,3 +2321,5 @@
 
 </body>
 </html>
+
+```
